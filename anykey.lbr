@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -7967,6 +7967,8 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <wire x1="-0.09" y1="-1" x2="0.09" y2="-1" width="0.1" layer="21"/>
 <circle x="-1.25" y="0" radius="0.045" width="0" layer="21"/>
 <circle x="1.25" y="0" radius="0.045" width="0" layer="21"/>
+<text x="-1.8" y="1.4" size="0.8" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.2" y="-2.2" size="0.8" layer="27" font="vector">&gt;VALUE</text>
 </package>
 <package name="2X05_SMT">
 <smd name="1" x="-2.54" y="-1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
@@ -14095,6 +14097,47 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <rectangle x1="8.3875" y1="18.5125" x2="8.4375" y2="18.5375" layer="29"/>
 <rectangle x1="8.3875" y1="18.5375" x2="8.4375" y2="18.5625" layer="29"/>
 <text x="0" y="-0.125" size="0.05" layer="29" font="vector">/Users/matthias/Desktop/Sparrow/krone.bmp</text>
+</package>
+<package name="ST_BAL_WLCSP">
+<description>ST WLCSP balun package, e.g. for BAL-NRF01D3 or BALF-NRF01D3</description>
+<smd name="GND" x="0" y="0.25" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="VCC" x="0" y="-0.25" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="DIFF1" x="-0.6" y="0.25" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="DIFF2" x="-0.6" y="-0.25" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="SE" x="0.433" y="0" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<wire x1="-0.819" y1="0.5" x2="0.652" y2="0.5" width="0.1" layer="51"/>
+<wire x1="0.652" y1="0.5" x2="0.652" y2="-0.5" width="0.1" layer="51"/>
+<wire x1="0.652" y1="-0.5" x2="-0.819" y2="-0.5" width="0.1" layer="51"/>
+<wire x1="-0.819" y1="-0.5" x2="-0.819" y2="0.5" width="0.1" layer="51"/>
+<wire x1="0.2" y1="0.5" x2="0.652" y2="0.5" width="0.1" layer="21"/>
+<wire x1="0.652" y1="0.5" x2="0.652" y2="0.2" width="0.1" layer="21"/>
+<wire x1="0.652" y1="-0.2" x2="0.652" y2="-0.5" width="0.1" layer="21"/>
+<wire x1="0.652" y1="-0.5" x2="0.2" y2="-0.5" width="0.1" layer="21"/>
+<wire x1="-0.2" y1="-0.5" x2="-0.4" y2="-0.5" width="0.1" layer="21"/>
+<wire x1="-0.4" y1="0.5" x2="-0.2" y2="0.5" width="0.1" layer="21"/>
+<wire x1="-0.819" y1="0.05" x2="-0.819" y2="-0.05" width="0.1" layer="21"/>
+<wire x1="-0.819" y1="0.45" x2="-0.819" y2="0.5" width="0.1" layer="21"/>
+<wire x1="-0.819" y1="0.5" x2="-0.75" y2="0.5" width="0.1" layer="21"/>
+<wire x1="-0.819" y1="-0.45" x2="-0.819" y2="-0.5" width="0.1" layer="21"/>
+<wire x1="-0.819" y1="-0.5" x2="-0.75" y2="-0.5" width="0.1" layer="21"/>
+<circle x="0.652" y="0.5" radius="0.2" width="0" layer="21"/>
+<text x="-1.8" y="0.7" size="0.8" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.3" y="-1.4" size="0.8" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="BLP2032SM">
+<description>CR2032 coin cell holder by Memory Protection Devices</description>
+<smd name="+" x="-12.2" y="0" dx="3.2" dy="3.75" layer="1"/>
+<smd name="-" x="9.06" y="0" dx="3.2" dy="3.75" layer="1"/>
+<wire x1="-10" y1="7.6" x2="8.5" y2="7.6" width="0.127" layer="51"/>
+<wire x1="8.5" y1="7.6" x2="8.6" y2="7.6" width="0.127" layer="51"/>
+<wire x1="-10" y1="-7.6" x2="8.5" y2="-7.6" width="0.127" layer="51"/>
+<wire x1="8.5" y1="-7.6" x2="8.6" y2="-7.6" width="0.127" layer="51"/>
+<wire x1="-10" y1="-7.6" x2="-10" y2="7.6" width="0.127" layer="51" curve="-80.201815"/>
+<wire x1="8.5" y1="7.6" x2="8.5" y2="-7.6" width="0.127" layer="51" curve="-74.607897"/>
+<wire x1="-10" y1="7.6" x2="8.6" y2="7.6" width="0.127" layer="21"/>
+<wire x1="-10" y1="-7.6" x2="8.6" y2="-7.6" width="0.127" layer="21"/>
+<text x="-10" y="8" size="0.8" layer="25" font="vector">&gt;NAME</text>
+<text x="-10" y="-9" size="0.8" layer="27" font="vector">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -21021,6 +21064,15 @@ BAT54C (SOT323)</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="BLP2032SM" package="BLP2032SM">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="2450BM14A0002">
@@ -21206,18 +21258,31 @@ BAT54C (SOT323)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BALUN">
+<deviceset name="BALUN" prefix="BAL">
+<description>BALUN</description>
 <gates>
 <gate name="G$1" symbol="BALUN" x="2.54" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="6-PIN-0603">
+<device name="0603-6" package="6-PIN-0603">
 <connects>
 <connect gate="G$1" pin="BAL1" pad="P$3"/>
 <connect gate="G$1" pin="BAL2" pad="P$4"/>
 <connect gate="G$1" pin="DC" pad="P$5"/>
 <connect gate="G$1" pin="GND" pad="P$2"/>
 <connect gate="G$1" pin="UNBAL" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WLCSP" package="ST_BAL_WLCSP">
+<connects>
+<connect gate="G$1" pin="BAL1" pad="DIFF1"/>
+<connect gate="G$1" pin="BAL2" pad="DIFF2"/>
+<connect gate="G$1" pin="DC" pad="VCC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="UNBAL" pad="SE"/>
 </connects>
 <technologies>
 <technology name=""/>
