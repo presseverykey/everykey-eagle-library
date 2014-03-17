@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -14273,6 +14273,34 @@ JEDEC MO-220</description>
 <rectangle x1="0.8" y1="-1.8" x2="1.8" y2="-0.8" layer="31"/>
 <rectangle x1="0.8" y1="-0.5" x2="1.8" y2="0.5" layer="31"/>
 </package>
+<package name="AVX-70-9155">
+<description>AVX spring loaded (compression) contact, height 1mm (70-9155-001-610) or 1.5mm (70-9155-001-615)</description>
+<smd name="1@2" x="-5" y="0" dx="2.4" dy="3" layer="1"/>
+<smd name="1@1" x="5" y="0" dx="2.4" dy="3" layer="1"/>
+<wire x1="-6" y1="1.35" x2="6" y2="1.35" width="0.127" layer="51"/>
+<wire x1="6" y1="1.35" x2="6" y2="-1.35" width="0.127" layer="51"/>
+<wire x1="6" y1="-1.35" x2="-6" y2="-1.35" width="0.127" layer="51"/>
+<wire x1="-6" y1="-1.35" x2="-6" y2="1.35" width="0.127" layer="51"/>
+<wire x1="-2" y1="0.55" x2="-1.5" y2="0.55" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="0.55" x2="3" y2="0.55" width="0.127" layer="51"/>
+<wire x1="-2" y1="-0.55" x2="-1.5" y2="-0.55" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-0.55" x2="3" y2="-0.55" width="0.127" layer="51"/>
+<wire x1="-2" y1="0.55" x2="-2" y2="-0.55" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="0.55" x2="-1.5" y2="-0.55" width="0.127" layer="51"/>
+<wire x1="3" y1="1" x2="-3" y2="1" width="0.127" layer="51"/>
+<wire x1="-3" y1="1" x2="-3" y2="-1" width="0.127" layer="51"/>
+<wire x1="-3" y1="-1" x2="3" y2="-1" width="0.127" layer="51"/>
+<wire x1="3" y1="-1" x2="3" y2="-0.55" width="0.127" layer="51"/>
+<wire x1="3" y1="1" x2="3" y2="0.55" width="0.127" layer="51"/>
+<wire x1="-4" y1="0.9" x2="1" y2="0.9" width="0.05" layer="51" style="shortdash"/>
+<wire x1="1" y1="0.9" x2="1" y2="-0.9" width="0.05" layer="51" style="shortdash"/>
+<wire x1="1" y1="-0.9" x2="-4" y2="-0.9" width="0.05" layer="51" style="shortdash"/>
+<wire x1="-4" y1="-0.9" x2="-4" y2="0.9" width="0.05" layer="51" style="shortdash"/>
+<wire x1="-3.6" y1="1.35" x2="3.6" y2="1.35" width="0.127" layer="21"/>
+<wire x1="-3.6" y1="-1.35" x2="3.6" y2="-1.35" width="0.127" layer="21"/>
+<text x="-2" y="1.7" size="0.8" layer="25" font="vector">&gt;NAME</text>
+<text x="-2" y="-2.4" size="0.8" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TS3480">
@@ -20091,6 +20119,14 @@ Digikey: 568-4945-ND&lt;/p&gt;</description>
 <device name="SMD_LARGER" package="PCB_LARGER_RECT_PAD">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="AVX-70-9155">
+<connects>
+<connect gate="G$1" pin="1" pad="1@1 1@2"/>
 </connects>
 <technologies>
 <technology name=""/>
