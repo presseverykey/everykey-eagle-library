@@ -14301,6 +14301,20 @@ JEDEC MO-220</description>
 <text x="-2" y="1.7" size="0.8" layer="25" font="vector">&gt;NAME</text>
 <text x="-2" y="-2.4" size="0.8" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="CRYSTAL50X32">
+<description>Crystal 5x3.2 Quartz
+e.g. TXC 7B</description>
+<smd name="P$1" x="-1.85" y="-1.1" dx="2" dy="1.2" layer="1" rot="R180"/>
+<smd name="GND" x="-1.85" y="1.1" dx="2" dy="1.2" layer="1" rot="R180"/>
+<smd name="GND2" x="1.85" y="-1.1" dx="2" dy="1.2" layer="1"/>
+<smd name="P$4" x="1.85" y="1.1" dx="2" dy="1.2" layer="1"/>
+<wire x1="-0.6" y1="1.6" x2="0.6" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-1.6" x2="0.6" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="0.3" x2="-2.5" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="2.5" y1="0.3" x2="2.5" y2="-0.3" width="0.127" layer="21"/>
+<text x="-3" y="2" size="0.8" layer="25" font="vector">&gt;NAME</text>
+<text x="-3" y="-3" size="0.8" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TS3480">
@@ -21085,7 +21099,7 @@ BAT54C (SOT323)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRYSTAL_WITH_GROUND" prefix="Y" uservalue="yes">
+<deviceset name="CRYSTAL_WITH_GROUND" prefix="X" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CRYSTAL_WITH_GROUND" x="0" y="0"/>
 </gates>
@@ -21105,6 +21119,16 @@ BAT54C (SOT323)</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="50X32" package="CRYSTAL50X32">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$4"/>
+<connect gate="G$1" pin="GND" pad="GND GND2"/>
 </connects>
 <technologies>
 <technology name=""/>
