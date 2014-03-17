@@ -17192,21 +17192,21 @@ JEDEC MO-220</description>
 <pin name="VSS_A" x="-20.32" y="20.32" length="middle" direction="sup"/>
 <pin name="VSS_D" x="-20.32" y="15.24" length="middle" direction="sup"/>
 <pin name="THERMAL" x="-20.32" y="10.16" length="middle" direction="sup"/>
-<pin name="VDD_A" x="20.32" y="-45.72" length="middle" direction="out" rot="R180"/>
-<pin name="VDD_RF" x="20.32" y="-40.64" length="middle" direction="out" rot="R180"/>
-<pin name="TX_OUT" x="20.32" y="-50.8" length="middle" direction="out" rot="R180"/>
-<pin name="BAND_GAP" x="20.32" y="-35.56" length="middle" direction="out" rot="R180"/>
+<pin name="VDD_A" x="20.32" y="-48.26" length="middle" direction="out" rot="R180"/>
+<pin name="VDD_RF" x="20.32" y="-43.18" length="middle" direction="out" rot="R180"/>
+<pin name="TX_OUT" x="20.32" y="-53.34" length="middle" direction="out" rot="R180"/>
+<pin name="BAND_GAP" x="20.32" y="-38.1" length="middle" direction="out" rot="R180"/>
 <pin name="IRQ" x="20.32" y="-5.08" length="middle" direction="out" rot="R180"/>
-<pin name="SYS_CLK" x="20.32" y="-30.48" length="middle" direction="out" rot="R180"/>
-<pin name="OSC_OUT" x="20.32" y="-25.4" length="middle" direction="out" rot="R180"/>
-<pin name="VDD_X" x="20.32" y="-20.32" length="middle" direction="out" rot="R180"/>
+<pin name="SYS_CLK" x="20.32" y="-33.02" length="middle" direction="out" rot="R180"/>
+<pin name="OSC_OUT" x="20.32" y="-27.94" length="middle" direction="out" rot="R180"/>
+<pin name="VDD_X" x="20.32" y="-22.86" length="middle" direction="out" rot="R180"/>
 <pin name="DATA_CLK" x="20.32" y="-10.16" length="middle" direction="in" rot="R180"/>
-<pin name="EN2" x="-20.32" y="-30.48" length="middle" direction="in"/>
-<pin name="EN" x="-20.32" y="-35.56" length="middle" direction="in"/>
-<pin name="VDD_IO" x="-20.32" y="-40.64" length="middle" direction="in"/>
-<pin name="RX_IN2" x="-20.32" y="-45.72" length="middle" direction="in"/>
-<pin name="RX_IN1" x="-20.32" y="-50.8" length="middle" direction="in"/>
-<pin name="VDD_PA" x="-20.32" y="-15.24" length="middle" direction="in"/>
+<pin name="EN2" x="-20.32" y="-38.1" length="middle" direction="in"/>
+<pin name="EN" x="-20.32" y="-33.02" length="middle" direction="in"/>
+<pin name="VDD_IO" x="-20.32" y="-43.18" length="middle" direction="in"/>
+<pin name="RX_IN2" x="-20.32" y="-48.26" length="middle" direction="in"/>
+<pin name="RX_IN1" x="-20.32" y="-53.34" length="middle" direction="in"/>
+<pin name="VDD_PA" x="-20.32" y="-22.86" length="middle" direction="in"/>
 <pin name="ASK/OOK" x="20.32" y="40.64" length="middle" rot="R180"/>
 <pin name="I/O_0" x="20.32" y="35.56" length="middle" rot="R180"/>
 <pin name="I/O_1" x="20.32" y="30.48" length="middle" rot="R180"/>
@@ -17216,12 +17216,12 @@ JEDEC MO-220</description>
 <pin name="I/O_5" x="20.32" y="10.16" length="middle" rot="R180"/>
 <pin name="I/O_6" x="20.32" y="5.08" length="middle" rot="R180"/>
 <pin name="I/O_7" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="OSC_IN" x="-20.32" y="-25.4" length="middle" direction="in"/>
-<pin name="MOD" x="-20.32" y="-20.32" length="middle" direction="in"/>
+<pin name="OSC_IN" x="-20.32" y="-27.94" length="middle" direction="in"/>
+<pin name="MOD" x="20.32" y="-15.24" length="middle" direction="in" rot="R180"/>
 <wire x1="-15.24" y1="43.18" x2="15.24" y2="43.18" width="0.254" layer="94"/>
-<wire x1="15.24" y1="43.18" x2="15.24" y2="-53.34" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-53.34" x2="-15.24" y2="-53.34" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-53.34" x2="-15.24" y2="43.18" width="0.254" layer="94"/>
+<wire x1="15.24" y1="43.18" x2="15.24" y2="-55.88" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-55.88" x2="-15.24" y2="-55.88" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-55.88" x2="-15.24" y2="43.18" width="0.254" layer="94"/>
 </symbol>
 <symbol name="PN532">
 <pin name="DVSS" x="-25.4" y="22.86" length="middle" direction="pwr"/>
