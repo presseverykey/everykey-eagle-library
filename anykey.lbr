@@ -17236,14 +17236,14 @@ JEDEC MO-220</description>
 <wire x1="-15.24" y1="-55.88" x2="-15.24" y2="43.18" width="0.254" layer="94"/>
 </symbol>
 <symbol name="PN532">
-<pin name="DVSS" x="-25.4" y="22.86" length="middle" direction="pwr"/>
-<pin name="TVDD" x="-25.4" y="17.78" length="middle" direction="pwr"/>
-<pin name="TVSS1" x="-25.4" y="20.32" length="middle" direction="pwr"/>
-<pin name="TVSS2" x="-25.4" y="15.24" length="middle" direction="pwr"/>
-<pin name="AVDD" x="-25.4" y="12.7" length="middle" direction="pwr"/>
-<pin name="AVSS" x="-25.4" y="10.16" length="middle" direction="pwr"/>
-<pin name="PVDD" x="-25.4" y="7.62" length="middle" direction="pwr"/>
-<pin name="VBAT" x="-25.4" y="5.08" length="middle" direction="pwr"/>
+<pin name="DVSS" x="-25.4" y="10.16" length="middle" direction="pwr"/>
+<pin name="TVDD" x="-25.4" y="22.86" length="middle" direction="pwr"/>
+<pin name="TVSS1" x="-25.4" y="7.62" length="middle" direction="pwr"/>
+<pin name="TVSS2" x="-25.4" y="5.08" length="middle" direction="pwr"/>
+<pin name="AVDD" x="-25.4" y="20.32" length="middle" direction="pwr"/>
+<pin name="AVSS" x="-25.4" y="12.7" length="middle" direction="pwr"/>
+<pin name="PVDD" x="-25.4" y="17.78" length="middle" direction="pwr"/>
+<pin name="VBAT" x="-25.4" y="15.24" length="middle" direction="pwr"/>
 <pin name="LOADMOD" x="-25.4" y="0" length="middle" direction="out"/>
 <pin name="TX1" x="-25.4" y="-2.54" length="middle" direction="out"/>
 <pin name="TX2" x="-25.4" y="-5.08" length="middle" direction="out"/>
@@ -17262,17 +17262,17 @@ JEDEC MO-220</description>
 <pin name="TESTEN" x="25.4" y="12.7" length="middle" direction="in" rot="R180"/>
 <pin name="SIGIN" x="25.4" y="10.16" length="middle" direction="in" rot="R180"/>
 <pin name="!RSTPD" x="25.4" y="7.62" length="middle" direction="in" rot="R180"/>
-<pin name="P35" x="25.4" y="2.54" length="middle" rot="R180"/>
-<pin name="P30_UART_RX" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="P70_IRQ" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="P50_NSS_SCL_HSURX" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="MOSI_SDA_HSUTX" x="25.4" y="-7.62" length="middle" rot="R180"/>
-<pin name="P71_MISO" x="25.4" y="-10.16" length="middle" rot="R180"/>
-<pin name="P72_SCK" x="25.4" y="-12.7" length="middle" rot="R180"/>
-<pin name="P31_UART_TX" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="P32_INT0" x="25.4" y="-17.78" length="middle" rot="R180"/>
-<pin name="P33_INT1" x="25.4" y="-20.32" length="middle" rot="R180"/>
-<pin name="P34_SICCLK" x="25.4" y="-22.86" length="middle" rot="R180"/>
+<pin name="P35" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="P30_UART_RX" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="P70_IRQ" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="P50_NSS_SCL_HSURX" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="MOSI_SDA_HSUTX" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="P71_MISO" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="P72_SCK" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="P31_UART_TX" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="P32_INT0" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="P33_INT1" x="25.4" y="-22.86" length="middle" rot="R180"/>
+<pin name="P34_SICCLK" x="25.4" y="-25.4" length="middle" rot="R180"/>
 <wire x1="-20.32" y1="25.4" x2="20.32" y2="25.4" width="0.254" layer="94"/>
 <wire x1="20.32" y1="25.4" x2="20.32" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-27.94" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
