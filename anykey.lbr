@@ -14315,6 +14315,69 @@ e.g. TXC 7B</description>
 <text x="-3" y="2" size="0.8" layer="25" font="vector">&gt;NAME</text>
 <text x="-3" y="-3" size="0.8" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="QFN32-0.65-EP-VIAS">
+<description>QFN32, 0.65mm pitch, exposed pad, 12 thermal vias</description>
+<smd name="1" x="-3.4375" y="2.275" dx="1.5" dy="0.36" layer="1" roundness="30"/>
+<smd name="2" x="-3.4375" y="1.625" dx="1.5" dy="0.36" layer="1" roundness="30"/>
+<smd name="3" x="-3.4375" y="0.975" dx="1.5" dy="0.36" layer="1" roundness="30"/>
+<smd name="4" x="-3.4375" y="0.325" dx="1.5" dy="0.36" layer="1" roundness="30"/>
+<smd name="5" x="-3.4375" y="-0.325" dx="1.5" dy="0.36" layer="1" roundness="30"/>
+<smd name="6" x="-3.4375" y="-0.975" dx="1.5" dy="0.36" layer="1" roundness="30"/>
+<smd name="7" x="-3.4375" y="-1.625" dx="1.5" dy="0.36" layer="1" roundness="30"/>
+<smd name="8" x="-3.4375" y="-2.275" dx="1.5" dy="0.36" layer="1" roundness="30"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.127" layer="51"/>
+<smd name="9" x="-2.275" y="-3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R90"/>
+<smd name="10" x="-1.625" y="-3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R90"/>
+<smd name="11" x="-0.975" y="-3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R90"/>
+<smd name="12" x="-0.325" y="-3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R90"/>
+<smd name="13" x="0.325" y="-3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R90"/>
+<smd name="14" x="0.975" y="-3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R90"/>
+<smd name="15" x="1.625" y="-3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R90"/>
+<smd name="16" x="2.275" y="-3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R90"/>
+<smd name="17" x="3.4375" y="-2.275" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R180"/>
+<smd name="18" x="3.4375" y="-1.625" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R180"/>
+<smd name="19" x="3.4375" y="-0.975" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R180"/>
+<smd name="20" x="3.4375" y="-0.325" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R180"/>
+<smd name="21" x="3.4375" y="0.325" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R180"/>
+<smd name="22" x="3.4375" y="0.975" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R180"/>
+<smd name="23" x="3.4375" y="1.625" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R180"/>
+<smd name="24" x="3.4375" y="2.275" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R180"/>
+<smd name="25" x="2.275" y="3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R270"/>
+<smd name="26" x="1.625" y="3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R270"/>
+<smd name="27" x="0.975" y="3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R270"/>
+<smd name="28" x="0.325" y="3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R270"/>
+<smd name="29" x="-0.325" y="3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R270"/>
+<smd name="30" x="-0.975" y="3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R270"/>
+<smd name="31" x="-1.625" y="3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R270"/>
+<smd name="32" x="-2.275" y="3.4375" dx="1.5" dy="0.36" layer="1" roundness="30" rot="R270"/>
+<circle x="-3.5" y="3.5" radius="0.5" width="0" layer="21"/>
+<wire x1="-2.7" y1="3.5" x2="-3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="-3.5" y2="2.7" width="0.127" layer="21"/>
+<wire x1="2.7" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="2.7" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="-2.7" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="-2.7" width="0.127" layer="21"/>
+<text x="-3" y="5" size="0.8" layer="25" font="vector">&gt;NAME</text>
+<text x="-3" y="-6" size="0.8" layer="27" font="vector">&gt;VALUE</text>
+<smd name="PAD" x="0" y="0" dx="4.8" dy="4.8" layer="1" roundness="2"/>
+<pad name="VIA1" x="-1.9" y="1.9" drill="0.3" stop="no" thermals="no"/>
+<pad name="VIA2" x="-0.8" y="1.9" drill="0.3" stop="no" thermals="no"/>
+<pad name="VIA3" x="0.8" y="1.9" drill="0.3" stop="no" thermals="no"/>
+<pad name="VIA4" x="1.9" y="1.9" drill="0.3" stop="no" thermals="no"/>
+<pad name="VIA9" x="-1.9" y="-1.9" drill="0.3" stop="no" thermals="no"/>
+<pad name="VIA5" x="-1.9" y="0.8" drill="0.3" stop="no" thermals="no"/>
+<pad name="VIA6" x="1.9" y="0.8" drill="0.3" stop="no" thermals="no"/>
+<pad name="VIA7" x="-1.9" y="-0.8" drill="0.3" thermals="no"/>
+<pad name="VIA8" x="1.9" y="-0.8" drill="0.3" stop="no" thermals="no"/>
+<pad name="VIA10" x="-0.8" y="-1.9" drill="0.3" stop="no" thermals="no"/>
+<pad name="VIA11" x="0.8" y="-1.9" drill="0.3" stop="no" thermals="no"/>
+<pad name="VIA12" x="1.9" y="-1.9" drill="0.3" stop="no" thermals="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TS3480">
@@ -17365,6 +17428,46 @@ e.g. TXC 7B</description>
 <wire x1="17.78" y1="27.94" x2="17.78" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-30.48" x2="-17.78" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="-30.48" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
+</symbol>
+<symbol name="LPC1343FHN33">
+<wire x1="-40.64" y1="33.02" x2="40.64" y2="33.02" width="0.254" layer="94"/>
+<wire x1="40.64" y1="33.02" x2="40.64" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="40.64" y1="-33.02" x2="-40.64" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-40.64" y1="-33.02" x2="-40.64" y2="33.02" width="0.254" layer="94"/>
+<text x="-40.64" y="34.036" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-30.226" y="34.036" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+<pin name="PIO2_0/DTR" x="43.18" y="-7.62" length="short" rot="R180"/>
+<pin name="PIO0_0/RESET" x="-43.18" y="30.48" length="short"/>
+<pin name="PIO0_1/CLKOUT/CT32B0_MAT2/USB_FTOGGLE" x="-43.18" y="27.94" length="short"/>
+<pin name="XTALIN" x="-43.18" y="-15.24" length="short" direction="in"/>
+<pin name="XTALOUT" x="-43.18" y="-17.78" length="short" direction="out"/>
+<pin name="PIO1_8/CT16B1_CAP0" x="43.18" y="5.08" length="short" rot="R180"/>
+<pin name="PIO0_2/SSEL/CT16B0_CAP0" x="-43.18" y="25.4" length="short"/>
+<pin name="PIO0_3/USB_VBUS" x="-43.18" y="22.86" length="short"/>
+<pin name="PIO0_4/SCL" x="-43.18" y="20.32" length="short"/>
+<pin name="PIO0_5/SDA" x="-43.18" y="17.78" length="short"/>
+<pin name="PIO1_9/CT16B1_MAT0" x="43.18" y="2.54" length="short" rot="R180"/>
+<pin name="USB_DM" x="-43.18" y="-5.08" length="short"/>
+<pin name="USB_DP" x="-43.18" y="-7.62" length="short"/>
+<pin name="PIO0_6/USB_CONNECT/SCK" x="-43.18" y="15.24" length="short"/>
+<pin name="PIO0_7/CTS" x="-43.18" y="12.7" length="short"/>
+<pin name="PIO0_8/MISO/CT16B0_MAT0" x="-43.18" y="10.16" length="short"/>
+<pin name="PIO0_9/MOSI/CT16B0_MAT1/SWO" x="-43.18" y="7.62" length="short"/>
+<pin name="PIO0_10/SWCLK/SCK/CT16B0_MAT2" x="-43.18" y="5.08" length="short"/>
+<pin name="PIO1_10/AD6/CT16B1_MAT1" x="43.18" y="0" length="short" rot="R180"/>
+<pin name="PIO0_11/TDI/AD0/CT32B0_MAT3" x="-43.18" y="2.54" length="short"/>
+<pin name="PIO1_0/TMS/AD1/CT32B1_CAP0" x="43.18" y="25.4" length="short" rot="R180"/>
+<pin name="PIO1_1/TDO/AD2/CT32B1_MAT0" x="43.18" y="22.86" length="short" rot="R180"/>
+<pin name="PIO1_2/TRST/AD3/CT32B1_MAT1" x="43.18" y="20.32" length="short" rot="R180"/>
+<pin name="PIO1_3/SWDIO/AD4/CT32B1_MAT2" x="43.18" y="17.78" length="short" rot="R180"/>
+<pin name="PIO1_4/AD5/CT32B1_MAT3/WAKEUP" x="43.18" y="15.24" length="short" rot="R180"/>
+<pin name="VSS" x="-43.18" y="-30.48" length="short" direction="pwr"/>
+<pin name="PIO1_11/AD7" x="43.18" y="-2.54" length="short" rot="R180"/>
+<pin name="PIO3_2" x="43.18" y="-12.7" length="short" rot="R180"/>
+<pin name="VDD" x="-43.18" y="-25.4" length="short" direction="pwr"/>
+<pin name="PIO1_5/RTS/CT32B0_CAP0" x="43.18" y="12.7" length="short" rot="R180"/>
+<pin name="PIO1_6/RXD/CT32B0_MAT0" x="43.18" y="10.16" length="short" rot="R180"/>
+<pin name="PIO1_7/TXD/CT32B0_MAT1" x="43.18" y="7.62" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -23733,6 +23836,53 @@ BAV99W (SOT323)</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LPC1343_QFN32" prefix="IC">
+<description>LPC1343 NXP Cortex M3, 72 MHz, USB, in a QFN32 package (LPC1343FHN33)</description>
+<gates>
+<gate name="G$1" symbol="LPC1343FHN33" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="FHN33" package="QFN32-0.65-EP-VIAS">
+<connects>
+<connect gate="G$1" pin="PIO0_0/RESET" pad="2"/>
+<connect gate="G$1" pin="PIO0_1/CLKOUT/CT32B0_MAT2/USB_FTOGGLE" pad="3"/>
+<connect gate="G$1" pin="PIO0_10/SWCLK/SCK/CT16B0_MAT2" pad="19"/>
+<connect gate="G$1" pin="PIO0_11/TDI/AD0/CT32B0_MAT3" pad="21"/>
+<connect gate="G$1" pin="PIO0_2/SSEL/CT16B0_CAP0" pad="8"/>
+<connect gate="G$1" pin="PIO0_3/USB_VBUS" pad="9"/>
+<connect gate="G$1" pin="PIO0_4/SCL" pad="10"/>
+<connect gate="G$1" pin="PIO0_5/SDA" pad="11"/>
+<connect gate="G$1" pin="PIO0_6/USB_CONNECT/SCK" pad="15"/>
+<connect gate="G$1" pin="PIO0_7/CTS" pad="16"/>
+<connect gate="G$1" pin="PIO0_8/MISO/CT16B0_MAT0" pad="17"/>
+<connect gate="G$1" pin="PIO0_9/MOSI/CT16B0_MAT1/SWO" pad="18"/>
+<connect gate="G$1" pin="PIO1_0/TMS/AD1/CT32B1_CAP0" pad="22"/>
+<connect gate="G$1" pin="PIO1_1/TDO/AD2/CT32B1_MAT0" pad="23"/>
+<connect gate="G$1" pin="PIO1_10/AD6/CT16B1_MAT1" pad="20"/>
+<connect gate="G$1" pin="PIO1_11/AD7" pad="27"/>
+<connect gate="G$1" pin="PIO1_2/TRST/AD3/CT32B1_MAT1" pad="24"/>
+<connect gate="G$1" pin="PIO1_3/SWDIO/AD4/CT32B1_MAT2" pad="25"/>
+<connect gate="G$1" pin="PIO1_4/AD5/CT32B1_MAT3/WAKEUP" pad="26"/>
+<connect gate="G$1" pin="PIO1_5/RTS/CT32B0_CAP0" pad="30"/>
+<connect gate="G$1" pin="PIO1_6/RXD/CT32B0_MAT0" pad="31"/>
+<connect gate="G$1" pin="PIO1_7/TXD/CT32B0_MAT1" pad="32"/>
+<connect gate="G$1" pin="PIO1_8/CT16B1_CAP0" pad="7"/>
+<connect gate="G$1" pin="PIO1_9/CT16B1_MAT0" pad="12"/>
+<connect gate="G$1" pin="PIO2_0/DTR" pad="1"/>
+<connect gate="G$1" pin="PIO3_2" pad="28"/>
+<connect gate="G$1" pin="USB_DM" pad="13"/>
+<connect gate="G$1" pin="USB_DP" pad="14"/>
+<connect gate="G$1" pin="VDD" pad="6 29"/>
+<connect gate="G$1" pin="VSS" pad="PAD VIA1 VIA2 VIA3 VIA4 VIA5 VIA6 VIA7 VIA8 VIA9 VIA10 VIA11 VIA12"/>
+<connect gate="G$1" pin="XTALIN" pad="4"/>
+<connect gate="G$1" pin="XTALOUT" pad="5"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
