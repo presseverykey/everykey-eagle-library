@@ -14446,6 +14446,31 @@ e.g. TXC 7B</description>
 <smd name="TX1" x="10" y="29" dx="2.1844" dy="1.0668" layer="1"/>
 <smd name="TX2" x="10" y="21" dx="2.1844" dy="1.0668" layer="1"/>
 </package>
+<package name="NFC_ANTENNA_TI_NRF">
+<wire x1="-18.415" y1="26.352" x2="18.415" y2="26.352" width="1.27" layer="1"/>
+<wire x1="-16.637" y1="24.575" x2="16.637" y2="24.575" width="1.27" layer="1"/>
+<wire x1="-14.859" y1="22.796" x2="14.859" y2="22.796" width="1.27" layer="1"/>
+<wire x1="-13.081" y1="21.018" x2="13.081" y2="21.018" width="1.27" layer="1"/>
+<wire x1="-18.415" y1="-26.352" x2="20.193" y2="-26.352" width="1.27" layer="1"/>
+<wire x1="-16.637" y1="-24.575" x2="18.415" y2="-24.575" width="1.27" layer="1"/>
+<wire x1="-14.859" y1="-22.796" x2="16.637" y2="-22.796" width="1.27" layer="1"/>
+<wire x1="-13.081" y1="-21.018" x2="14.859" y2="-21.018" width="1.27" layer="1"/>
+<wire x1="-18.415" y1="-26.352" x2="-18.415" y2="26.352" width="1.27" layer="1"/>
+<wire x1="-16.637" y1="-24.574" x2="-16.637" y2="24.574" width="1.27" layer="1"/>
+<wire x1="-14.859" y1="-22.796" x2="-14.859" y2="22.796" width="1.27" layer="1"/>
+<wire x1="-13.081" y1="-21.018" x2="-13.081" y2="21.018" width="1.27" layer="1"/>
+<wire x1="20.193" y1="-26.352" x2="20.193" y2="11.621" width="1.27" layer="1"/>
+<wire x1="18.415" y1="-24.574" x2="18.415" y2="26.352" width="1.27" layer="1"/>
+<wire x1="16.637" y1="-22.796" x2="16.637" y2="24.574" width="1.27" layer="1"/>
+<wire x1="14.859" y1="-21.018" x2="14.859" y2="22.796" width="1.27" layer="1"/>
+<wire x1="13.081" y1="16.32" x2="13.081" y2="21.018" width="1.27" layer="1"/>
+<wire x1="13.081" y1="16.32" x2="20.35" y2="16.32" width="1.27" layer="16"/>
+<pad name="NC1" x="13.0834" y="16.3447" drill="0.3" shape="octagon"/>
+<pad name="NC2" x="22" y="16.32" drill="0.3" shape="octagon"/>
+<wire x1="22" y1="16.32" x2="20.193" y2="16.32" width="1.27" layer="1"/>
+<smd name="TX" x="20.193" y="11.621" dx="1.27" dy="1.27" layer="1" roundness="100" rot="R90"/>
+<smd name="GND" x="20.193" y="16.32" dx="1.27" dy="1.27" layer="1" roundness="100" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TS3480">
@@ -17556,9 +17581,9 @@ e.g. TXC 7B</description>
 <wire x1="20.32" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-10.16" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
-<pin name="TX2" x="10.16" y="-12.7" length="point"/>
-<pin name="OPT_GND" x="7.62" y="-12.7" length="point"/>
-<pin name="TX1" x="5.08" y="-12.7" length="point"/>
+<pin name="TX2" x="10.16" y="-12.7" visible="off" length="point"/>
+<pin name="OPT_GND" x="7.62" y="-12.7" visible="off" length="point"/>
+<pin name="TX1" x="5.08" y="-12.7" visible="off" length="point"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -23980,7 +24005,7 @@ BAV99W (SOT323)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NFC_ANTENNA_SYM">
+<deviceset name="NFC_ANTENNA_SYM" prefix="ANT">
 <gates>
 <gate name="G$1" symbol="NFC_ANTENNA_SYM" x="-7.62" y="12.7"/>
 </gates>
@@ -23990,6 +24015,22 @@ BAV99W (SOT323)</description>
 <connect gate="G$1" pin="OPT_GND" pad="GND_OPT"/>
 <connect gate="G$1" pin="TX1" pad="TX1"/>
 <connect gate="G$1" pin="TX2" pad="TX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NFC_ANTENNA" prefix="ANT">
+<gates>
+<gate name="G$2" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TI_NRF" package="NFC_ANTENNA_TI_NRF">
+<connects>
+<connect gate="G$2" pin="1" pad="GND"/>
+<connect gate="G$2" pin="2" pad="TX"/>
 </connects>
 <technologies>
 <technology name=""/>
