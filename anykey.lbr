@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11684,10 +11684,10 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <pad name="THERM5" x="0.8" y="-0.4" drill="0.3" stop="no" thermals="no"/>
 <pad name="THERM4" x="-0.8" y="-0.4" drill="0.3" stop="no" thermals="no"/>
 <pad name="THERM3" x="0" y="0" drill="0.3" stop="no" thermals="no"/>
-<smd name="EXT1" x="-1.55" y="0.25" dx="0.7" dy="0.28" layer="1" cream="no"/>
-<smd name="EXT2" x="1.55" y="0.25" dx="0.7" dy="0.28" layer="1" cream="no"/>
-<smd name="EXT4" x="1.55" y="-0.25" dx="0.7" dy="0.28" layer="1" cream="no"/>
-<smd name="EXT3" x="-1.55" y="-0.25" dx="0.7" dy="0.28" layer="1" cream="no"/>
+<smd name="EXT1" x="-1.55" y="0.25" dx="0.7" dy="0.28" layer="1" thermals="no" cream="no"/>
+<smd name="EXT2" x="1.55" y="0.25" dx="0.7" dy="0.28" layer="1" thermals="no" cream="no"/>
+<smd name="EXT4" x="1.55" y="-0.25" dx="0.7" dy="0.28" layer="1" thermals="no" cream="no"/>
+<smd name="EXT3" x="-1.55" y="-0.25" dx="0.7" dy="0.28" layer="1" thermals="no" cream="no"/>
 </package>
 <package name="1210_POLAR">
 <description>1210 package with anode/cathode marking</description>
