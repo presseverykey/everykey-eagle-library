@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6751,6 +6751,7 @@ type RDH, grid 15 mm</description>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
 <package name="1X01_ROUND">
 <pad name="1" x="0" y="0" drill="1" diameter="1.6764" rot="R90"/>
@@ -14520,6 +14521,10 @@ e.g. TXC 7B</description>
 <text x="-23" y="-17" size="1" layer="27" font="vector">&gt;VALUE</text>
 <rectangle x1="-19" y1="-12.03" x2="-12.8" y2="10.1" layer="41"/>
 </package>
+<package name="1X01_1MM_ROUND">
+<smd name="P$2" x="0" y="0" dx="1" dy="1" layer="1" roundness="100"/>
+<text x="0.635" y="-0.27" size="0.6096" layer="25" font="vector">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TS3480">
@@ -17664,6 +17669,10 @@ e.g. TXC 7B</description>
 <wire x1="7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <pin name="HOLDER" x="10.16" y="-2.54" visible="off" length="short" rot="R180"/>
 </symbol>
+<symbol name="PINHD0">
+<pin name="1" x="0" y="0" visible="off" length="short" direction="pas" function="dot" rot="R90"/>
+<text x="1.524" y="1.397" size="1.27" layer="95" font="vector">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TS3480" prefix="VREG">
@@ -20439,6 +20448,14 @@ Digikey: 568-4945-ND&lt;/p&gt;</description>
 <device name="" package="AVX-70-9155">
 <connects>
 <connect gate="G$1" pin="1" pad="1@1 1@2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMALL" package="1X01_1MM_ROUND">
+<connects>
+<connect gate="G$1" pin="1" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
