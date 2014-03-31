@@ -7988,6 +7988,7 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <text x="-2.2" y="-2.2" size="0.8" layer="27" font="vector">&gt;VALUE</text>
 </package>
 <package name="2X05_SMT">
+<description>1.27mm pitch 2x5 header, SMD</description>
 <smd name="1" x="-2.54" y="-1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
 <smd name="2" x="-2.54" y="1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
 <smd name="3" x="-1.27" y="-1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
@@ -14546,6 +14547,24 @@ e.g. TXC 7B</description>
 <wire x1="-0.4" y1="-1.1" x2="0.4" y2="-1.1" width="0.127" layer="21"/>
 <text x="-2" y="1.8" size="0.8" layer="25" font="vector">&gt;NAME</text>
 <text x="-2" y="-2.6" size="0.8" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="2X06_SMT">
+<description>1.27mm pitch 2x6 header, SMD</description>
+<smd name="1" x="-3.175" y="-1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
+<smd name="2" x="-3.175" y="1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
+<smd name="3" x="-1.905" y="-1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
+<smd name="4" x="-1.905" y="1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
+<smd name="5" x="-0.635" y="-1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
+<smd name="6" x="-0.635" y="1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
+<smd name="7" x="0.635" y="-1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
+<smd name="8" x="0.635" y="1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
+<smd name="9" x="1.905" y="-1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
+<smd name="10" x="1.905" y="1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
+<wire x1="-3.81" y1="1.715" x2="-3.81" y2="-1.715" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.715" x2="3.81" y2="-1.715" width="0.127" layer="21"/>
+<text x="5.08" y="-1.905" size="0.8128" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<smd name="11" x="3.175" y="-1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
+<smd name="12" x="3.175" y="1.95" dx="2.4" dy="0.762" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -22745,6 +22764,7 @@ BAT54C (SOT323)</description>
 </devices>
 </deviceset>
 <deviceset name="HEADER-1X12" prefix="P">
+<description>12 pin header</description>
 <gates>
 <gate name="G$1" symbol="PINHD12" x="0" y="0"/>
 </gates>
@@ -22769,6 +22789,25 @@ BAT54C (SOT323)</description>
 </technologies>
 </device>
 <device name="ROUND" package="1X12_ROUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2X6_1.27_SMD" package="2X06_SMT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
