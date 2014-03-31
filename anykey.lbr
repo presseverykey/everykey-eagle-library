@@ -14544,6 +14544,8 @@ e.g. TXC 7B</description>
 <wire x1="-0.4" y1="-1.1" x2="-0.4" y2="1.1" width="0.127" layer="21" curve="-180"/>
 <wire x1="-0.4" y1="1.1" x2="0.4" y2="1.1" width="0.127" layer="21"/>
 <wire x1="-0.4" y1="-1.1" x2="0.4" y2="-1.1" width="0.127" layer="21"/>
+<text x="-2" y="1.8" size="0.8" layer="25" font="vector">&gt;NAME</text>
+<text x="-2" y="-2.6" size="0.8" layer="27" font="vector">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -17804,7 +17806,7 @@ Parts: UCW1V331MNL1GS - 330uF 35V Electrolytic capacitor (Farnell: 1580581)</des
 </device>
 </devices>
 </deviceset>
-<deviceset name="PUSHBUTTON">
+<deviceset name="PUSHBUTTON" prefix="BTN">
 <description>&lt;p&gt;&lt;b&gt;Push button&lt;/b&gt; 1 x momentary close switches&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TACTILE-SWITCH-MOMENTARY-CLOSE" x="0" y="0"/>
