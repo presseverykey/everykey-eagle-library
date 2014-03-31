@@ -14521,6 +14521,30 @@ e.g. TXC 7B</description>
 <smd name="P$2" x="0" y="0" dx="1" dy="1" layer="1" roundness="100"/>
 <text x="0.635" y="-0.27" size="0.6096" layer="25" font="vector">&gt;Name</text>
 </package>
+<package name="CK_PTS810">
+<description>C&amp;K miniature pushbutton</description>
+<smd name="1" x="-2.075" y="1.075" dx="1.05" dy="0.65" layer="1"/>
+<smd name="2" x="2.075" y="1.075" dx="1.05" dy="0.65" layer="1"/>
+<smd name="3" x="-2.075" y="-1.075" dx="1.05" dy="0.65" layer="1"/>
+<smd name="4" x="2.075" y="-1.075" dx="1.05" dy="0.65" layer="1"/>
+<wire x1="-2.1" y1="1.6" x2="2.1" y2="1.6" width="0.127" layer="51"/>
+<wire x1="2.1" y1="1.6" x2="2.1" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="2.1" y1="-1.6" x2="-2.1" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-2.1" y1="-1.6" x2="-2.1" y2="1.6" width="0.127" layer="51"/>
+<rectangle x1="-2.3" y1="0.8" x2="-2.1" y2="1.35" layer="51"/>
+<rectangle x1="-2.3" y1="-1.35" x2="-2.1" y2="-0.8" layer="51"/>
+<rectangle x1="-2.3" y1="0.8" x2="-2.1" y2="1.35" layer="51"/>
+<rectangle x1="2.1" y1="0.8" x2="2.3" y2="1.35" layer="51"/>
+<rectangle x1="2.1" y1="-1.35" x2="2.3" y2="-0.8" layer="51"/>
+<wire x1="-2.1" y1="1.6" x2="2.1" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2.1" y1="0.5" x2="2.1" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="0.5" x2="-2.1" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.4" y1="1.1" x2="0.4" y2="-1.1" width="0.127" layer="21" curve="-180"/>
+<wire x1="-0.4" y1="-1.1" x2="-0.4" y2="1.1" width="0.127" layer="21" curve="-180"/>
+<wire x1="-0.4" y1="1.1" x2="0.4" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-1.1" x2="0.4" y2="-1.1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TS3480">
@@ -17817,6 +17841,15 @@ Parts: UCW1V331MNL1GS - 330uF 35V Electrolytic capacitor (Farnell: 1580581)</des
 <connects>
 <connect gate="G$1" pin="1" pad="P$1 P$2"/>
 <connect gate="G$1" pin="2" pad="P$3 P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTS810" package="CK_PTS810">
+<connects>
+<connect gate="G$1" pin="1" pad="3 4"/>
+<connect gate="G$1" pin="2" pad="1 2"/>
 </connects>
 <technologies>
 <technology name=""/>
