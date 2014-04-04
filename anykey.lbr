@@ -24040,7 +24040,7 @@ BAV99W (SOT323)</description>
 <gate name="G$1" symbol="TRF79XX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QFN32-0.5-EP">
+<device name="NOVIAS" package="QFN32-0.5-EP">
 <connects>
 <connect gate="G$1" pin="ASK/OOK" pad="12"/>
 <connect gate="G$1" pin="BAND_GAP" pad="11"/>
@@ -24063,6 +24063,46 @@ BAV99W (SOT323)</description>
 <connect gate="G$1" pin="RX_IN2" pad="9"/>
 <connect gate="G$1" pin="SYS_CLK" pad="27"/>
 <connect gate="G$1" pin="THERMAL" pad="PAD"/>
+<connect gate="G$1" pin="TX_OUT" pad="5"/>
+<connect gate="G$1" pin="VDD_A" pad="1"/>
+<connect gate="G$1" pin="VDD_IO" pad="16"/>
+<connect gate="G$1" pin="VDD_PA" pad="4"/>
+<connect gate="G$1" pin="VDD_RF" pad="3"/>
+<connect gate="G$1" pin="VDD_X" pad="32"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+<connect gate="G$1" pin="VSS" pad="10"/>
+<connect gate="G$1" pin="VSS_A" pad="15"/>
+<connect gate="G$1" pin="VSS_D" pad="29"/>
+<connect gate="G$1" pin="VSS_PA" pad="6"/>
+<connect gate="G$1" pin="VSS_RX" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="VIAS" package="QFN32-0.5-EP-VIAS">
+<connects>
+<connect gate="G$1" pin="ASK/OOK" pad="12"/>
+<connect gate="G$1" pin="BAND_GAP" pad="11"/>
+<connect gate="G$1" pin="DATA_CLK" pad="26"/>
+<connect gate="G$1" pin="EN" pad="28"/>
+<connect gate="G$1" pin="EN2" pad="25"/>
+<connect gate="G$1" pin="I/O_0" pad="17"/>
+<connect gate="G$1" pin="I/O_1" pad="18"/>
+<connect gate="G$1" pin="I/O_2" pad="19"/>
+<connect gate="G$1" pin="I/O_3" pad="20"/>
+<connect gate="G$1" pin="I/O_4" pad="21"/>
+<connect gate="G$1" pin="I/O_5" pad="22"/>
+<connect gate="G$1" pin="I/O_6" pad="23"/>
+<connect gate="G$1" pin="I/O_7" pad="24"/>
+<connect gate="G$1" pin="IRQ" pad="13"/>
+<connect gate="G$1" pin="MOD" pad="14"/>
+<connect gate="G$1" pin="OSC_IN" pad="31"/>
+<connect gate="G$1" pin="OSC_OUT" pad="30"/>
+<connect gate="G$1" pin="RX_IN1" pad="8"/>
+<connect gate="G$1" pin="RX_IN2" pad="9"/>
+<connect gate="G$1" pin="SYS_CLK" pad="27"/>
+<connect gate="G$1" pin="THERMAL" pad="PAD VIA1 VIA2 VIA3 VIA4 VIA5 VIA6 VIA7 VIA8 VIA9"/>
 <connect gate="G$1" pin="TX_OUT" pad="5"/>
 <connect gate="G$1" pin="VDD_A" pad="1"/>
 <connect gate="G$1" pin="VDD_IO" pad="16"/>
