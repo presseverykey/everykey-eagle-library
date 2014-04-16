@@ -22621,7 +22621,7 @@ BAT54C (SOT323)</description>
 <gate name="G$1" symbol="LPC1837FBD144" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QFP144-0.5">
+<device name="QFP144" package="QFP144-0.5">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="128"/>
 <connect gate="G$1" pin="!TRST" pad="29"/>
