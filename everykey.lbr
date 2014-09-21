@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7245,9 +7245,9 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <wire x1="2.54" y1="2.032" x2="2.54" y2="-2.286" width="0.127" layer="39"/>
 <wire x1="2.54" y1="-2.286" x2="-2.54" y2="-2.286" width="0.127" layer="39"/>
 <wire x1="-2.54" y1="-2.286" x2="-2.54" y2="2.032" width="0.127" layer="39"/>
-<smd name="1" x="-1.4986" y="-1.85" dx="1" dy="1.4986" layer="1"/>
-<smd name="2" x="0" y="-1.85" dx="1" dy="1.4986" layer="1"/>
-<smd name="3" x="1.4986" y="-1.85" dx="1" dy="1.4986" layer="1"/>
+<smd name="1" x="-1.5" y="-1.85" dx="1" dy="1.4986" layer="1"/>
+<smd name="2" x="0" y="-1.85" dx="1" dy="1.4986" layer="1" thermals="no"/>
+<smd name="3" x="1.5" y="-1.85" dx="1" dy="1.4986" layer="1"/>
 <text x="2.54" y="0" size="0.6096" layer="25" font="vector">&gt;NAME</text>
 <text x="2.54" y="-1.27" size="0.6096" layer="27" font="vector">&gt;VALUE</text>
 <wire x1="-2.25" y1="1.25" x2="2.25" y2="1.25" width="0.127" layer="21"/>
@@ -7301,7 +7301,7 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <wire x1="-1.05" y1="-0.85" x2="-1.05" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="-1.05" y1="-0.5" x2="-1.6" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="-1.6" y1="-0.5" x2="-1.6" y2="0.5" width="0.127" layer="21"/>
-<wire x1="0.635" y1="0.635" x2="0.635" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="0.5588" y1="0.635" x2="0.5588" y2="-0.635" width="0.127" layer="21"/>
 <smd name="A" x="-1.1" y="0" dx="0.635" dy="0.635" layer="1" rot="R180"/>
 <smd name="K" x="1.1" y="0" dx="0.635" dy="0.635" layer="1"/>
 <text x="-1.27" y="1.27" size="0.6096" layer="25" font="vector">&gt;NAME</text>
@@ -7986,6 +7986,7 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <circle x="1.25" y="0" radius="0.045" width="0" layer="21"/>
 <text x="-1.8" y="1.4" size="0.8" layer="25" font="vector">&gt;NAME</text>
 <text x="-2.2" y="-2.2" size="0.8" layer="27" font="vector">&gt;VALUE</text>
+<circle x="-1.6" y="-1.35" radius="0.1" width="0" layer="21"/>
 </package>
 <package name="2X05_SMT">
 <description>1.27mm pitch 2x5 header, SMD</description>
@@ -11709,7 +11710,7 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
 <wire x1="-0.9" y1="1.25" x2="0.9" y2="1.25" width="0.127" layer="21"/>
 <wire x1="-0.9" y1="-1.25" x2="0.9" y2="-1.25" width="0.127" layer="21"/>
-<text x="0" y="0" size="1" layer="21" font="vector" align="center">+-</text>
+<text x="0" y="0" size="1" layer="21" font="vector" rot="SR0" align="center">+-</text>
 </package>
 <package name="QFN32-0.5-EP-VIAS">
 <description>QFN package, 32 pins, 0.5mm pitch, exposed pad with 9 thermal vias</description>
@@ -12119,7 +12120,7 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <text x="4" y="2" size="0.5" layer="27" font="vector">&gt;VALUE</text>
 </package>
 <package name="SOT-23-6">
-<description>SOT23-6 package</description>
+<description>&lt;p&gt;SOT23-6 package, 0.95mm pitch. Also works for SuperSOT 6.&lt;/p&gt;</description>
 <smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="1.2" layer="1"/>
 <smd name="2" x="0" y="-1.15" dx="0.6" dy="1.2" layer="1"/>
 <smd name="3" x="0.95" y="-1.15" dx="0.6" dy="1.2" layer="1"/>
@@ -14599,6 +14600,95 @@ e.g. TXC 7B</description>
 <text x="2.4" y="3.2" size="0.8" layer="27" font="vector">&gt;VALUE</text>
 <smd name="4" x="-1.1" y="-3.7" dx="2.2" dy="2.8" layer="1"/>
 <rectangle x1="-1.6" y1="-4.5" x2="-0.6" y2="-3" layer="51"/>
+</package>
+<package name="DPAK-3">
+<description>DPAK package, 3 pins (2 + heatsink, middle pin is usually cut off)</description>
+<smd name="4" x="0" y="0" dx="6.2" dy="5.8" layer="1" thermals="no"/>
+<smd name="3" x="7.18" y="2.285" dx="3" dy="1.6" layer="1"/>
+<smd name="1" x="7.18" y="-2.285" dx="3" dy="1.6" layer="1"/>
+<wire x1="-2.1" y1="3.3" x2="5" y2="3.3" width="0.127" layer="51"/>
+<wire x1="5" y1="3.3" x2="5" y2="-3.3" width="0.127" layer="51"/>
+<wire x1="5" y1="-3.3" x2="-2.1" y2="-3.3" width="0.127" layer="51"/>
+<wire x1="-2.1" y1="-3.3" x2="-2.1" y2="3.3" width="0.127" layer="51"/>
+<wire x1="-2.1" y1="3.3" x2="5" y2="3.3" width="0.127" layer="21"/>
+<wire x1="5" y1="3.3" x2="5" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="5" y1="-3.3" x2="-2.1" y2="-3.3" width="0.127" layer="21"/>
+<text x="-2" y="3.8" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-2" y="-4.9" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="WUERTH-WR-WTB-2-2-VERT">
+<description>Würth WR-WTB connector series. 2mm pitch, SMD, vertical, with housing.</description>
+<smd name="1" x="-1" y="2.25" dx="1" dy="5.5" layer="1"/>
+<smd name="2" x="1" y="2.25" dx="1" dy="5.5" layer="1"/>
+<smd name="HOLD1" x="-3.4" y="0" dx="1.6" dy="3" layer="1"/>
+<smd name="HOLD2" x="3.4" y="0" dx="1.6" dy="3" layer="1"/>
+<wire x1="-4" y1="2.5" x2="4" y2="2.5" width="0.127" layer="51"/>
+<wire x1="4" y1="2.5" x2="4" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="4" y1="-2.5" x2="-4" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-4" y1="-2.5" x2="-4" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-4" y1="1.8" x2="-4" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="2.5" x2="-1.8" y2="2.5" width="0.127" layer="21"/>
+<wire x1="1.8" y1="2.5" x2="4" y2="2.5" width="0.127" layer="21"/>
+<wire x1="4" y1="2.5" x2="4" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-4" y1="-1.8" x2="-4" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="-2.5" x2="4" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="4" y1="-2.5" x2="4" y2="-1.8" width="0.127" layer="21"/>
+<text x="-3" y="-4" size="1.27" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="RFD22301">
+<description>RFduino module</description>
+<smd name="1" x="-7.2136" y="6.35" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="2" x="-7.2136" y="5.08" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="3" x="-7.2136" y="3.81" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="4" x="-7.2136" y="2.54" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="5" x="-7.2136" y="1.27" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="6" x="-7.2136" y="0" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="7" x="-7.2136" y="-1.27" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="8" x="-7.2136" y="-2.54" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="9" x="7.2136" y="-6.35" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="10" x="7.2136" y="-5.08" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="11" x="7.2136" y="-3.81" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="12" x="7.2136" y="-2.54" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="13" x="7.2136" y="-1.27" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="14" x="7.2136" y="0" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="15" x="7.2136" y="1.27" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="16" x="7.2136" y="2.54" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="17" x="7.2136" y="3.81" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="18" x="7.2136" y="5.08" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<smd name="19" x="7.2136" y="6.35" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="51"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.127" layer="51"/>
+<rectangle x1="-7.62" y1="-7.62" x2="2.54" y2="-3.81" layer="39"/>
+<wire x1="-7.62" y1="6.985" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="6.985" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-3.175" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-6.985" width="0.127" layer="21"/>
+<text x="-7.62" y="8.255" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-9.525" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="WUERTH-WR-WTB-2-2-HORIZ">
+<description>Würth WR-WTB series connector, 2 pins + 2 x mechanical holder, 2mm pitch, horizontal plug</description>
+<smd name="1" x="-1" y="7" dx="1.5" dy="3.4" layer="1"/>
+<smd name="2" x="1" y="7" dx="1.5" dy="3.4" layer="1"/>
+<smd name="HOLD1" x="-3.4" y="1.35" dx="1.4" dy="3.1" layer="1"/>
+<smd name="HOLD2" x="3.4" y="1.35" dx="1.4" dy="3.1" layer="1"/>
+<wire x1="-4" y1="3.3" x2="-4" y2="7.6" width="0.127" layer="21"/>
+<wire x1="-3" y1="6" x2="-2" y2="6" width="0.127" layer="21"/>
+<wire x1="2" y1="6" x2="3" y2="6" width="0.127" layer="21"/>
+<wire x1="4" y1="7.6" x2="4" y2="3.3" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="0" x2="2.4" y2="0" width="0.127" layer="21"/>
+<text x="-2.92" y="-2.635" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<rectangle x1="-1.25" y1="6" x2="-0.75" y2="8.6" layer="51"/>
+<rectangle x1="0.75" y1="6" x2="1.25" y2="8.6" layer="51"/>
+<rectangle x1="-4" y1="-1" x2="4" y2="0" layer="51"/>
+<wire x1="-4" y1="7.6" x2="-3" y2="7.6" width="0.127" layer="21"/>
+<wire x1="-3" y1="7.6" x2="-3" y2="6" width="0.127" layer="21"/>
+<wire x1="3" y1="6" x2="3" y2="7.6" width="0.127" layer="21"/>
+<wire x1="3" y1="7.6" x2="4" y2="7.6" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -17326,7 +17416,7 @@ e.g. TXC 7B</description>
 <circle x="-4.318" y="17.78" radius="0.359209375" width="0" layer="94"/>
 <circle x="-8.382" y="-5.08" radius="0.359209375" width="0" layer="94"/>
 </symbol>
-<symbol name="SKYWORKS_AAT4280A">
+<symbol name="HIGH_SIDE_SWITCH">
 <description>Slew rate controlled power switch, 1.5-5.5V, 2.3A</description>
 <pin name="IN" x="-12.7" y="2.54" length="short" direction="in"/>
 <pin name="OUT" x="12.7" y="2.54" length="short" direction="out" rot="R180"/>
@@ -17792,26 +17882,55 @@ e.g. TXC 7B</description>
 <wire x1="1.016" y1="0.762" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.778" y1="2.032" x2="1.778" y2="0.762" width="0.127" layer="94"/>
 </symbol>
+<symbol name="HIGH_SIDE_SWITCH_ADJ">
+<description>High side switch with exposed slew adjust pin (should be pulled for most devices)</description>
+<pin name="IN" x="-12.7" y="5.08" length="short" direction="in"/>
+<pin name="OUT" x="12.7" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="ON_!OFF" x="-12.7" y="0" length="short" direction="in"/>
+<pin name="GND" x="12.7" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="ADJ" x="-12.7" y="-5.08" length="short" direction="in"/>
+</symbol>
+<symbol name="RFD22301">
+<description>RFduino module</description>
+<pin name="GPIO0" x="-15.24" y="7.62" length="short"/>
+<pin name="GPIO1" x="-15.24" y="5.08" length="short"/>
+<pin name="GPIO2" x="-15.24" y="2.54" length="short"/>
+<pin name="GPIO3" x="-15.24" y="0" length="short"/>
+<pin name="GPIO4" x="-15.24" y="-2.54" length="short"/>
+<pin name="GPIO5" x="-15.24" y="-5.08" length="short"/>
+<pin name="GPIO6" x="-15.24" y="-7.62" length="short"/>
+<pin name="VDD" x="15.24" y="7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="15.24" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="RESET" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="FACTORY" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="EXTANT" x="15.24" y="-2.54" length="short" rot="R180"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-1.778" y="10.922" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.032" y="-12.446" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="DIG_SENS_3PIN">
+<description>&lt;p&gt;Toshiba TCS20DPR hall sensor. SOT-23F package&lt;/p&gt;</description>
+<pin name="VCC" x="-7.62" y="2.54" length="short"/>
+<pin name="GND" x="-7.62" y="-2.54" length="short"/>
+<pin name="OUT" x="7.62" y="0" length="short" rot="R180"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="TS3480" prefix="VREG">
-<description>Taiwan Semi voltage regulator 3.3V, 100mA. Vin max:30V. Add 0,1µF ceramic low ESR capacitors to both in and output. Farnell: 1476687</description>
-<gates>
-<gate name="G$1" symbol="TS3480" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23">
-<connects>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="VIN" pad="2"/>
-<connect gate="G$1" pin="VOUT" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="3.3V">
 <description>&lt;b&gt;3.3V Supply&lt;/b&gt;</description>
 <gates>
@@ -20660,6 +20779,15 @@ Digikey: 568-4945-ND&lt;/p&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="WR-WTB2" package="WUERTH-WR-WTB-2-2-VERT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="HEADER-1X3" prefix="P" uservalue="yes">
@@ -20668,7 +20796,7 @@ Digikey: 568-4945-ND&lt;/p&gt;</description>
 <gate name="A" symbol="PINHD3" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X03_OVAL">
+<device name="OVAL" package="1X03_OVAL">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
@@ -20693,6 +20821,26 @@ Digikey: 568-4945-ND&lt;/p&gt;</description>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
 <connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WR-WTB-2-2-PADS" package="WUERTH-WR-WTB-2-2-VERT">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="HOLD1 HOLD2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WR-WTB-2-2-H-PADS" package="WUERTH-WR-WTB-2-2-HORIZ">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="HOLD1 HOLD2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -21173,34 +21321,6 @@ Digikey: 568-4945-ND&lt;/p&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="L78L" prefix="VREG" uservalue="yes">
-<description>Basic LDO voltage regulator 100mA</description>
-<gates>
-<gate name="G$1" symbol="VREG" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="SOT89-3" package="SOT89-3">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VIN" pad="3"/>
-<connect gate="G$1" pin="VOUT" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOIC8" package="SOIC8">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VIN" pad="8"/>
-<connect gate="G$1" pin="VOUT" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TRANSISTOR_NPN" prefix="T" uservalue="yes">
 <description>Small signal general purpose NPN transistor</description>
 <gates>
@@ -21386,13 +21506,16 @@ MMA8453Q: 10 Bit</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP170X" prefix="VREG" uservalue="yes">
-<description>&lt;p&gt;Microchip 1702 / 1703 LDOs, low quiescent, low voltage drop, up to 250mA.&lt;/p&gt;</description>
+<deviceset name="LDO" prefix="VREG" uservalue="yes">
+<description>&lt;p&gt;Microchip 1702 / 1703 LDOs. Vin: 3-13.2V, Imax: 250mA, low voltage drop, low quiescent current. SOT89-3 package.&lt;/p&gt;
+&lt;p&gt;Taiwan Semi TS3480 voltage regulator. Vinmax: 30V, Vout: 3.3V, Imax: 100mA. SOT23 package.&lt;/p&gt;
+&lt;p&gt;Vishay MC78M00 voltage regulator. Vinmax: 35V, Vout: 3.3V - 12V, Imax: 500mA. DPAK package.&lt;/p&gt;
+&lt;p&gt;Toshiba TA78LxxF voltage regulator. Vinmax: 35V, Vout: 5V - 24V, Imax: 150mA. SOT89-3 package.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="VREG" x="5.08" y="0"/>
 </gates>
 <devices>
-<device name="SOT_89_3" package="SOT89-3">
+<device name="SOT89-3-MCP170X" package="SOT89-3">
 <connects>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="VIN" pad="2"/>
@@ -21402,10 +21525,41 @@ MMA8453Q: 10 Bit</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SOT_23" package="SOT23">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DPAK" package="DPAK-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT89-3-TA78LXXF" package="SOT89-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
-<deviceset name="MCP180X" prefix="VREG" uservalue="yes">
-<description>&lt;p&gt;Cheap Microchip LDO&lt;/p&gt;</description>
+<deviceset name="LDO_ENABLE" prefix="VREG" uservalue="yes">
+<description>&lt;p&gt;Microchip MCP1801 3.3V LDO with enable, 150mA, max. Vin: 10V. SOT23-5 package.&lt;/p&gt;
+&lt;p&gt;Diodes Inc AP2204 3.3V LDO with enable, 150mA, max. Vin:24V. SOT23-5 package.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="VREG_ENABLE" x="0" y="0"/>
 </gates>
@@ -22368,7 +22522,8 @@ BAT54C (SOT323)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="HTU21D">
+<deviceset name="HTU21D" prefix="IC">
+<description>MeasSpec HTU21D(F) digital humidity and temperature sensor</description>
 <gates>
 <gate name="G$1" symbol="HTU21D" x="0" y="2.54"/>
 </gates>
@@ -23919,13 +24074,14 @@ BAT54C (SOT323)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SKYWORKS_AAT4280A" prefix="IC">
-<description>Skyworks slew controlled power switch. 1.5-5.5V, 2.3A max.</description>
+<deviceset name="HIGH_SIDE_SWITCH" prefix="IC" uservalue="yes">
+<description>&lt;p&gt;AAT4280: Skyworks slew controlled power switch. 1.5-5.5V, 2.3A max.&lt;/p&gt;
+&lt;p&gt;AAT4285: Skyworks slew controlled power switch. 3.0-13.2V, 1.7A max.&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="SKYWORKS_AAT4280A" x="0" y="0"/>
+<gate name="G$1" symbol="HIGH_SIDE_SWITCH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SC70JW-8" package="SC70JW-8">
+<device name="AAT4280" package="SC70JW-8">
 <connects>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="IN" pad="1 5 6 7 8"/>
@@ -23936,12 +24092,34 @@ BAT54C (SOT323)</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SC70JW-8-NOTHERMALS" package="SC70JW-8-NOTHERMALS">
+<device name="AAT4280-NOTHERMALS" package="SC70JW-8-NOTHERMALS">
 <connects>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="IN" pad="1 5 6 7 8"/>
 <connect gate="G$1" pin="ON_!OFF" pad="3"/>
 <connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="AAT4285" package="SC70JW-8">
+<connects>
+<connect gate="G$1" pin="GND" pad="5 6 7 8"/>
+<connect gate="G$1" pin="IN" pad="1 2"/>
+<connect gate="G$1" pin="ON_!OFF" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="AAT4285-NOTHERMALS" package="SC70JW-8-NOTHERMALS">
+<connects>
+<connect gate="G$1" pin="GND" pad="5 6 7 8"/>
+<connect gate="G$1" pin="IN" pad="1 2"/>
+<connect gate="G$1" pin="ON_!OFF" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -24370,6 +24548,74 @@ BAV99W (SOT323)</description>
 <connect gate="G$1" pin="RING2" pad="4"/>
 <connect gate="G$1" pin="SLEEVE" pad="1"/>
 <connect gate="G$1" pin="TIP" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HIGH_SIDE_SWITCH_ADJ">
+<description>Load switch with exposed upper FET gate.
+Usually a pullup is required between Vin and adj. Slew rate can be adjusted by adding optional resistors and capacitors, see datasheet.
+&lt;p&gt;Fairchild FDC6324L, 3-20V, 1.5A, SuperSOT6 (SOT-23-6) package&lt;/p&gt;
+&lt;P&gt;Vishay Si1865DDL, 1.8-12V, 1.1A, SC70-6 package (not available yet)&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="HIGH_SIDE_SWITCH_ADJ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23-6" package="SOT-23-6">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="6"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="4"/>
+<connect gate="G$1" pin="ON_!OFF" pad="5"/>
+<connect gate="G$1" pin="OUT" pad="2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFD22301">
+<description>RFduino module</description>
+<gates>
+<gate name="G$1" symbol="RFD22301" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RFD22301">
+<connects>
+<connect gate="G$1" pin="EXTANT" pad="11"/>
+<connect gate="G$1" pin="FACTORY" pad="15"/>
+<connect gate="G$1" pin="GND" pad="1 2 8 9 10 12 18 19"/>
+<connect gate="G$1" pin="GPIO0" pad="16"/>
+<connect gate="G$1" pin="GPIO1" pad="17"/>
+<connect gate="G$1" pin="GPIO2" pad="3"/>
+<connect gate="G$1" pin="GPIO3" pad="4"/>
+<connect gate="G$1" pin="GPIO4" pad="5"/>
+<connect gate="G$1" pin="GPIO5" pad="6"/>
+<connect gate="G$1" pin="GPIO6" pad="7"/>
+<connect gate="G$1" pin="RESET" pad="14"/>
+<connect gate="G$1" pin="VDD" pad="13"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIG_SENS_3PIN" prefix="IC">
+<description>Toshiba TCS20DPR hall sensor. SOT-23F package</description>
+<gates>
+<gate name="G$1" symbol="DIG_SENS_3PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TCS20DPR" package="SOT23">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
