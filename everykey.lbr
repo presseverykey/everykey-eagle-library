@@ -15075,6 +15075,16 @@ to the connector's pads.</description>
 <text x="2" y="-0.6" size="0.5" layer="27" font="vector">&gt;VALUE</text>
 <smd name="2" x="0" y="0" dx="1" dy="0.86" layer="1" cream="no"/>
 </package>
+<package name="1X02_ROUND_7.62">
+<description>2 pin header, 7.62mm (3x2.54mm, 0.3in) spacing</description>
+<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="51"/>
+<pad name="1" x="-3.81" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="2" x="3.81" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<text x="-3.77" y="1.2" size="0.7" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-3.77" y="-2" size="0.7" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TS3480">
@@ -21419,6 +21429,15 @@ Digikey: 568-4945-ND&lt;/p&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="ROUND-7.62" package="1X02_ROUND_7.62">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="HEADER-1X3" prefix="P" uservalue="yes">
@@ -25613,6 +25632,15 @@ Usually a pullup is required between Vin and adj. Slew rate can be adjusted by a
 </gates>
 <devices>
 <device name="SOD523" package="SOD523F">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="A"/>
+<connect gate="G$1" pin="CATHODE" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD123FL" package="SOD123FL">
 <connects>
 <connect gate="G$1" pin="ANODE" pad="A"/>
 <connect gate="G$1" pin="CATHODE" pad="K"/>
