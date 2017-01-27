@@ -1,4 +1,4 @@
-anykey-eagle-library
-====================
+everykey-eagle-library
+======================
 
 Eagle CAD parts library
